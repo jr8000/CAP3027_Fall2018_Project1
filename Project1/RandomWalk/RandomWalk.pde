@@ -9,6 +9,7 @@ CheckBox checkBox1;
 Slider slider1;
 Slider slider2;
 boolean startButtonPressedOnce = false;
+boolean startButtonWasPressedByUser = false;
 int debugCounter = 0;
 int currentX = 400;
 int currentY = 400;
@@ -21,7 +22,6 @@ class XYCoordinate {
 
 LinkedList<XYCoordinate> pointsToDraw;
 
-ControlP5 cp5_1;
 
 void setup() {
   size(800, 800);
@@ -82,7 +82,10 @@ int randIntFromZeroToThree() {
 
 void draw() {
   cp5.draw();
-  startButton();
+  //if (startButtonWasPressedByUser) {
+    //generateData();
+    //DrawData();
+  //}
 }
 
 void startButton() {
@@ -90,15 +93,16 @@ void startButton() {
     startButtonPressedOnce = true;
     return;
   }
-  println("start button pressed");
-  print("current state of item 1 in the checkbox: ");
-  print(checkBox1.getState(0));
-  print("\ncurrent state of item 2 in the checkbox: ");
-  print(checkBox1.getState(1));
-  print("\n");
+  startButtonWasPressedByUser = True;
+  //println("start button pressed");
+  //print("current state of item 1 in the checkbox: ");
+  //print(checkBox1.getState(0));
+  //print("\ncurrent state of item 2 in the checkbox: ");
+  //print(checkBox1.getState(1));
+  //print("\n");
   //randIntFromZeroToThree();
-  makeNextPoint();
-  drawCurrentPointWithColor();
+  //makeNextPoint();
+  //drawCurrentPointWithColor();
 }
 
 void doTheDrawing() {
