@@ -1,6 +1,4 @@
-# First Project from the course Intro to Digital Arts & Sciences (CAP3027)
-
-## Java GUI Application: The Random Walk Algorithm
+## Processing GUI Demostration: Random Walk (pixels)
 
 ### To test this code, follow these steps:
 * download the Processing software from Processing.org
