@@ -1,4 +1,4 @@
-## Processing GUI Demostration: Random Walk (pixels)
+# Processing GUI Demostration: Random Walk (pixels)
 
 ### To test this code, follow these steps:
 * download the Processing software from Processing.org
